@@ -1,0 +1,92 @@
+@import '../../../variables.scss';
+
+.nav {
+	height: 1.927083333vw;
+	background-color: $black-color;
+	display: flex;
+	align-items: center;
+	gap: 18.8541666667vw;
+	justify-content: center;
+	&__container {
+		display: flex;
+
+		&_left {
+			gap: 0.989583333vw;
+		}
+		&_right {
+			gap: 1.875vw;
+		}
+	}
+}
+
+.icon {
+	width: 0.520833333vw;
+	height: 0.520833333vw;
+	cursor: pointer;
+}
+
+.text {
+	font-size: 0.625vw;
+	font-weight: 400;
+	line-height: 0.833333333vw;
+}
+
+.border {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.grey {
+	color: $grey-color;
+}
+.white {
+	color: $white-color;
+}
+
+.bold {
+	font-weight: 700;
+	font-size: 0.729166667vw;
+}
+
+.adress {
+	display: flex;
+	gap: 1.40625vw;
+	&__city {
+		display: flex;
+		gap: 0.572916667vw;
+	}
+}
+
+.phones {
+	margin-left: 0.364583333vw;
+	display: flex;
+	gap: 1.041666667vw;
+}
+
+.btns {
+	display: flex;
+	gap: 0.416666667vw;
+	align-items: center;
+}
+
+.btn {
+	background-color: $greyDark-color;
+	padding: 0.260416667vw 0.78125vw;
+	border: none;
+	border-radius: 0.364583333vw;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #f2f3f5;
+		color: #000;
+	}
+	&:active {
+		background-color: $greyDark-color;
+		color: $white-color;
+	}
+}
+
+.navigation {
+	display: flex;
+	gap: 0.833333333vw;
+	align-items: center;
+}

@@ -1,0 +1,200 @@
+@import '../../../variables.scss';
+
+.container {
+	padding-left: 6.5vw;
+	display: flex;
+	gap: 0.8333333333vw;
+}
+
+.cards {
+	&__1 {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8333333333vw;
+	}
+	&__2 {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8333333333vw;
+	}
+	&__small {
+		display: flex;
+		gap: 0.8333333333vw;
+	}
+}
+
+.card {
+	position: relative;
+	border-radius: 20px;
+	&__1 {
+		width: fit-content;
+		padding-left: 2.5520833333vw;
+		padding-right: 3.90625vw;
+		padding-bottom: 1.3541666667vw;
+		padding-top: 8.6979166667vw;
+	}
+	&__2 {
+		width: fit-content;
+		padding-left: 2.34375vw;
+		padding-right: 7.7083333333vw;
+		padding-bottom: 1.5104166667vw;
+		padding-top: 1.71875vw;
+	}
+	&__3 {
+		width: fit-content;
+		padding-left: 2.5520833333vw;
+		padding-right: 4.6354166667vw;
+		padding-bottom: 0.8333333333vw;
+		padding-top: 0.78125vw;
+		display: flex;
+		gap: 1.3vw;
+	}
+
+	&__4 {
+		width: fit-content;
+		padding-left: 2.8645833333vw;
+		padding-right: 26.5vw;
+		padding-bottom: 2.0833333333vw;
+		padding-top: 1.71875vw;
+	}
+	&__5 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 2.9166666667vw;
+		padding-right: 2.4479166667vw;
+		padding-bottom: 1.19vw;
+		padding-top: 0.9375vw;
+	}
+	&__6 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 2.9166666667vw;
+		padding-right: 2.4479166667vw;
+		padding-bottom: 0.7vw;
+		padding-top: 1.3020833333vw;
+	}
+
+	&__grey {
+		background: linear-gradient(90deg, #e2e6eb 19.77%, #f3f1f5 62.29%);
+		&_reversed {
+			background: linear-gradient(270deg, #e2e6eb 19.77%, #f3f1f5 62.29%);
+		}
+	}
+	&__yellow {
+		background: linear-gradient(90deg, #ff8c00 0%, #ffbd00 77.38%);
+	}
+}
+.gears {
+	position: absolute;
+	width: 13.1770833333vw;
+	height: 10.3125vw;
+	top: -1.3vw;
+	left: 4.5vw;
+}
+
+.pay {
+	position: absolute;
+	width: 11vw;
+	top: -1.8vw;
+	right: 0.5vw;
+}
+
+.boxes {
+	width: 15.15625vw;
+	height: 9.9479166667vw;
+}
+
+.coin {
+	&__1 {
+		position: absolute;
+		right: 13.5vw;
+		top: -1vw;
+		width: 3.96875vw;
+	}
+	&__2 {
+		position: absolute;
+		right: 12.2vw;
+		bottom: -1.5vw;
+		width: 6.8vw;
+	}
+	&__3 {
+		position: absolute;
+		right: 1vw;
+		top: 2.1vw;
+		width: 2.25vw;
+	}
+}
+.thunder {
+	position: absolute;
+	right: 4.5vw;
+	top: 0.5vw;
+	width: 7.75vw;
+}
+
+.rupor {
+	position: absolute;
+	bottom: 0.5vw;
+	right: 2.5vw;
+	width: 5.1vw;
+}
+
+.title {
+	font-size: 1.25vw;
+	font-weight: 700;
+	line-height: 1.9791666667vw;
+	color: $greyDark-color;
+}
+
+.subtitle {
+	font-size: 0.7291666667vw;
+	font-weight: 400;
+	line-height: 1.25vw;
+	letter-spacing: 0.01em;
+
+	&__line {
+		text-decoration: underline;
+	}
+
+	&__container {
+		margin-top: 1.3541666667vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1.0416666667vw;
+	}
+}
+
+.white {
+	color: $white-color;
+}
+
+.button {
+	background-color: $black-color;
+	font-size: 0.7291666667vw;
+	font-weight: 600;
+	line-height: 0.9895833333vw;
+	color: $white-color;
+	padding: 0.8333333333vw 1.8229166667vw 0.78125vw 1.7708333333vw;
+	border-radius: 10px;
+	border: none;
+
+	&__content {
+		position: relative;
+	}
+
+	&__row {
+		padding-right: 3.9583333333vw;
+	}
+}
+
+.row {
+	width: 0.8333333333vw;
+	position: absolute;
+	right: 1.5vw;
+	bottom: 0.9vw;
+}
+
+.car {
+	width: 17.5520833333vw;
+}

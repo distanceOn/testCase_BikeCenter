@@ -1,9 +1,9 @@
-import Main from './pages/Main/Main';
+import Help from './pages/Help/Help';
 
 function App() {
 	return (
 		<>
-			<Main />
+			<Help />
 		</>
 	);
 }

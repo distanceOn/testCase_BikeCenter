@@ -1,0 +1,55 @@
+@import '../../../variables.scss';
+
+.header {
+	background-color: #fff;
+	padding-left: 6.8vw;
+	padding-right: 6.8vw;
+	margin-top: 0.78125vw;
+	margin-bottom: 1.25vw;
+}
+.nav {
+	display: flex;
+	gap: 0.46875vw;
+	font-size: 0.625vw;
+	font-weight: 400;
+	line-height: 0.8333333333vw;
+	padding-bottom: 1.3541666667vw;
+}
+.link {
+	color: $greyDark-color;
+	&__active {
+		color: $greyPrimary-color;
+	}
+}
+
+.titles {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 1.3541666667vw;
+	font-weight: 600;
+	line-height: 1.9791666667vw;
+	width: fit-content;
+}
+
+.phones {
+	display: flex;
+	gap: 1.3541666667vw;
+	align-items: flex-end;
+}
+
+.phone {
+	font-size: 0.7291666667vw;
+	font-weight: 400;
+	line-height: 1.25vw;
+	letter-spacing: 0.01em;
+}
+
+.number {
+	font-size: 1.25vw;
+	font-weight: 600;
+	line-height: 1.9791666667vw;
+	letter-spacing: 0.01em;
+}

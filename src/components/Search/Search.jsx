@@ -162,7 +162,7 @@ function Search() {
 
 	return (
 		<>
-			<div className={s.search}>
+			<div className={isValue !== '' ? s.search_active : s.search}>
 				{showSearch()}
 				<input
 					className={s.input}
@@ -174,8 +174,30 @@ function Search() {
 						setIsValue(e.target.value);
 					}}
 				/>
+
+				{isValue === '' ? (
+					''
+				) : (
+					<Img
+						onClick={() => {
+							setIsValue('');
+						}}
+						style={s.exit}
+						url="Input__exit"
+						alt="exit"
+					/>
+				)}
 				<div className={s.container}>
-					<Img style={s.icon} url="Search_icon" alt="search" />
+					{isValue === '' ? (
+						<Img style={s.icon} url="Search_icon" alt="search" />
+					) : (
+						<Button
+							contentStyle={s.btn__search}
+							style={s.btn__search}
+							value="Найти"
+							type="button"
+						/>
+					)}
 				</div>
 			</div>
 		</>

@@ -6,7 +6,7 @@ const String = ({ style, value }) => {
 
 String.propTypes = {
 	style: PropTypes.string,
-	value: PropTypes.string.isRequired,
+	value: PropTypes.string,
 };
 
 export default String;

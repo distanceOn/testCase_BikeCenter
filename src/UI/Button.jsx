@@ -13,8 +13,8 @@ const Button = ({ style, value, type, content, contentStyle }) => {
 
 Button.propTypes = {
 	style: PropTypes.string,
-	value: PropTypes.string.isRequired,
-	type: PropTypes.string.isRequired,
+	value: PropTypes.string,
+	type: PropTypes.string,
 	content: PropTypes.object,
 	contentStyle: PropTypes.string,
 };

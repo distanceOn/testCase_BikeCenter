@@ -9,6 +9,94 @@
 	padding: 0.104166667vw;
 	display: flex;
 	align-items: center;
+	overflow: visible;
+
+	&__results {
+		position: absolute;
+		padding-top: 1.6666666667vw;
+		padding-left: 1.8229166667vw;
+		padding-right: 2.0833333333vw;
+		background-color: $white-color;
+		z-index: 100;
+		width: 30.2vw;
+		top: 2.8vw;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px 0px #00000026;
+		color: $greyDark-color;
+		height: fit-content;
+
+		&_scroll {
+			max-height: 30vw;
+			overflow-y: scroll;
+			margin-right: -1.9vw;
+			padding-right: 2vw;
+			&::-webkit-scrollbar {
+				width: 1px; /* Ширина скроллбара */
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background-color: #999999; /* Цвет ползунка */
+			}
+
+			&::-webkit-scrollbar-track {
+				background-color: #e0e0e0; /* Цвет трека (фона) скроллбара */
+			}
+		}
+		&_no {
+			position: absolute;
+			padding-left: 1.8229166667vw;
+			padding-right: 2.0833333333vw;
+			background-color: $white-color;
+			z-index: 100;
+			width: 30.2vw;
+			top: 2.8vw;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 0px #00000026;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
+.result {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	gap: 0.5208333333vw;
+	width: 100%;
+	padding-bottom: 0.4166666667vw;
+	border-bottom: 1px solid #ececec;
+	margin-bottom: 0.7291666667vw;
+}
+.text {
+	font-size: 0.8333333333vw;
+	font-weight: 400;
+	line-height: 1.1458333333vw;
+
+	&__item {
+		width: 14.8645833333vw;
+	}
+	&__cost {
+		font-size: 0.8333333333vw;
+		font-weight: 700;
+		line-height: 1.1458333333vw;
+		letter-spacing: 0.02em;
+		margin-left: auto;
+	}
+}
+
+.bikes {
+	padding-bottom: 0.8333333333vw;
+}
+
+.all {
+}
+
+.title {
+	font-size: 0.8333333333vw;
+	font-weight: 700;
+	line-height: 1.1458333333vw;
+	margin-bottom: 0.8333333333vw;
 }
 
 .input {
@@ -28,6 +116,24 @@
 		color: #828282;
 	}
 }
+
+.items {
+	&__item {
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		gap: 0.5208333333vw;
+		width: 100%;
+		padding-bottom: 0.4166666667vw;
+		border-bottom: 1px solid #ececec;
+		margin-bottom: 0.7291666667vw;
+		&:last-child {
+			border: none;
+			padding: 0;
+		}
+	}
+}
+
 .container {
 	width: 4.479166667vw;
 	height: 100%;
@@ -40,4 +146,38 @@
 .icon {
 	width: 0.833333333vw;
 	height: 0.833333333vw;
+	&_small {
+		width: 0.7291666667vw;
+	}
+	&_smallest {
+		width: 0.5208333333vw;
+		margin-left: auto;
+	}
+	&__block {
+		width: 2.7083333333vw;
+	}
+}
+
+.btn {
+	font-size: 0.7291666667vw;
+	font-weight: 400;
+	line-height: 0.9895833333vw;
+	padding-top: 0.7291666667vw;
+	padding-left: 4.4791666667vw;
+	padding-right: 3.9583333333vw;
+	padding-bottom: 0.7291666667vw;
+	border: none;
+	outline: none;
+	background-color: $black-color;
+	color: $white-color;
+	border-radius: 10px;
+
+	&__container {
+		background-color: #f2f3f5;
+		margin-left: -1.8229166667vw;
+		margin-right: -2.0833333333vw;
+		display: flex;
+		justify-content: center;
+		padding: 0.7291666667vw 0;
+	}
 }

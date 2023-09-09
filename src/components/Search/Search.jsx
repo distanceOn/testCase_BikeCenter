@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import Img from '../../UI/Img';
+import String from '../../UI/String';
+import Button from '../../UI/Button';
+
 import s from './Search.module.scss';
 function Search() {
 	const mokStringData = [
@@ -64,10 +67,103 @@ function Search() {
 		return { stringArray, categoryArray, itemArray };
 	};
 
+	const showSearch = () => {
+		const results = searchResults();
+		const { stringArray, categoryArray, itemArray } = results;
+		if (isValue !== '') {
+			if (
+				stringArray.length === 0 &&
+				categoryArray.length === 0 &&
+				itemArray.length === 0
+			) {
+				return <div className={s.search__results_no}>Нет результатов</div>;
+			} else {
+				return (
+					<div className={s.search__results}>
+						<div className={s.search__results_scroll}>
+							{stringArray.length !== 0 ? (
+								<div className={s.bikes}>
+									<String style={s.title} value="Велосипеды" />
+									{stringArray.map((item, index) => {
+										return (
+											<div key={index} className={s.result}>
+												<Img
+													style={s.icon_small}
+													url="Search__light"
+													alt="search"
+												/>
+												<String style={s.text} value={item} />
+												<Img
+													style={s.icon_smallest}
+													url="Arrow_right"
+													alt="arrow"
+												/>
+											</div>
+										);
+									})}
+								</div>
+							) : (
+								''
+							)}
+							{categoryArray.length !== 0 ? (
+								<div className={s.all}>
+									<String style={s.title} value="Все разделы" />
+									{categoryArray.map((item, index) => {
+										return (
+											<div key={index} className={s.result}>
+												<String style={s.text} value={item} />
+												<Img
+													style={s.icon_smallest}
+													url="Arrow_right"
+													alt="arrow"
+												/>
+											</div>
+										);
+									})}
+								</div>
+							) : (
+								''
+							)}
+							{itemArray.length !== 0 ? (
+								<div className={s.items}>
+									{itemArray.map((item, index) => {
+										return (
+											<div key={index} className={s.items__item}>
+												<Img
+													style={s.icon__block}
+													url="GreyBlock"
+													alt="photo"
+												/>
+												<String
+													style={s.text + ' ' + s.text__item}
+													value={item.name}
+												/>
+												<String
+													style={s.text + ' ' + s.text__cost}
+													value={item.cost}
+												/>
+											</div>
+										);
+									})}
+								</div>
+							) : (
+								''
+							)}
+						</div>
+
+						<div className={s.btn__container}>
+							<Button style={s.btn} value="Все результаты" type="button" />
+						</div>
+					</div>
+				);
+			}
+		}
+	};
+
 	return (
 		<>
 			<div className={s.search}>
-				{}
+				{showSearch()}
 				<input
 					className={s.input}
 					type="text"
@@ -76,7 +172,6 @@ function Search() {
 					value={isValue}
 					onInput={(e) => {
 						setIsValue(e.target.value);
-						console.log(searchResults());
 					}}
 				/>
 				<div className={s.container}>

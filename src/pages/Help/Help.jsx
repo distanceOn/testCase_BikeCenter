@@ -3,6 +3,7 @@ import HelpHeader from './HelpHeader/HelpHeader';
 import s from './Help.module.scss';
 import HelpCards from './HelpCards/HelpCards';
 import HelpInfo from './HelpInfo/HelpInfo';
+import HelpFooter from './HelpFooter/HelpFooter';
 function Help() {
 	return (
 		<>
@@ -11,6 +12,7 @@ function Help() {
 				<HelpHeader />
 				<HelpCards />
 				<HelpInfo />
+				<HelpFooter />
 			</div>
 		</>
 	);

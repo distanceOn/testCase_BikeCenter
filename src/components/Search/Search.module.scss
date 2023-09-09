@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
 .search {
+	position: relative;
 	box-sizing: border-box;
 	background-image: url(/assets/images/Search_bg.svg);
 	width: 34.322916667vw;

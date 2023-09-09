@@ -1,0 +1,44 @@
+@import '../../../variables.scss';
+
+.info {
+	padding-top: 1.8229166667vw;
+	padding-left: 6.7vw;
+	padding-right: 6.7vw;
+	padding-bottom: 5.2083333333vw;
+	display: flex;
+	flex-direction: column;
+	gap: 2.6041666667vw;
+}
+
+.content {
+}
+
+.title {
+	color: $greyDark-color;
+
+	font-size: 1.6666666667vw;
+	font-weight: 700;
+	line-height: 1.25vw;
+	margin-bottom: 1.3541666667vw;
+
+	&__small {
+		font-weight: 600;
+		font-size: 1.0416666667vw;
+		line-height: 1.25vw;
+	}
+}
+
+.text {
+	color: $greyDark-color;
+	display: flex;
+	flex-direction: column;
+	gap: 1.3541666667vw;
+	&__ul {
+		margin-left: 1.5vw;
+	}
+	&__letters {
+		font-size: 0.8333333333vw;
+		font-weight: 400;
+		line-height: 1.25vw;
+	}
+}

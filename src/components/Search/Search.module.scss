@@ -31,8 +31,8 @@
 		z-index: 100;
 		width: 30.2vw;
 		top: 2.8vw;
-		border-radius: 10px;
-		box-shadow: 0px 0px 10px 0px #00000026;
+		border-radius: 0.5208333333vw;
+		box-shadow: 0px 0px 0.5208333333vw 0px #00000026;
 		color: $greyDark-color;
 		height: fit-content;
 
@@ -61,8 +61,8 @@
 			z-index: 100;
 			width: 30.2vw;
 			top: 2.8vw;
-			border-radius: 10px;
-			box-shadow: 0px 0px 10px 0px #00000026;
+			border-radius: 0.5208333333vw;
+			box-shadow: 0px 0px 0.5208333333vw 0px #00000026;
 			display: flex;
 			justify-content: center;
 		}
@@ -76,7 +76,7 @@
 	gap: 0.5208333333vw;
 	width: 100%;
 	padding-bottom: 0.4166666667vw;
-	border-bottom: 1px solid #ececec;
+	border-bottom: 0.0520833333vw solid #ececec;
 	margin-bottom: 0.7291666667vw;
 }
 .text {
@@ -136,7 +136,7 @@
 		gap: 0.5208333333vw;
 		width: 100%;
 		padding-bottom: 0.4166666667vw;
-		border-bottom: 1px solid #ececec;
+		border-bottom: 0.0520833333vw solid #ececec;
 		margin-bottom: 0.7291666667vw;
 		&:last-child {
 			border: none;
@@ -181,7 +181,7 @@
 	outline: none;
 	background-color: $black-color;
 	color: $white-color;
-	border-radius: 10px;
+	border-radius: 0.5208333333vw;
 
 	&__container {
 		background-color: #f2f3f5;

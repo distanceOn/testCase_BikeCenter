@@ -30,18 +30,20 @@ function HeaderMain() {
 					<div className={s.content__1}>
 						<Img style={s.logo} url="Logo" alt="logo" />
 						<div className={s.content__search}>
-							<Button
-								style={s.kataBtn}
-								value="Каталог"
-								type="button"
-								content={
-									<div className={s.lines}>
-										<Img style={s.lines__line} url="Line" alt="line" />
-										<Img style={s.lines__line} url="Line" alt="line" />
-									</div>
-								}
-								contentStyle={s.lines__btn}
-							/>
+							<Link to="/menu">
+								<Button
+									style={s.kataBtn}
+									value="Каталог"
+									type="button"
+									content={
+										<div className={s.lines}>
+											<Img style={s.lines__line} url="Line" alt="line" />
+											<Img style={s.lines__line} url="Line" alt="line" />
+										</div>
+									}
+									contentStyle={s.lines__btn}
+								/>
+							</Link>
 							<Search />
 						</div>
 					</div>

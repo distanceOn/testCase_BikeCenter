@@ -25,7 +25,7 @@
 
 .card {
 	position: relative;
-	border-radius: 20px;
+	border-radius: 1.0416666667vw;
 	&__1 {
 		width: fit-content;
 		padding-left: 2.5520833333vw;
@@ -176,7 +176,7 @@
 	line-height: 0.9895833333vw;
 	color: $white-color;
 	padding: 0.8333333333vw 1.8229166667vw 0.78125vw 1.7708333333vw;
-	border-radius: 10px;
+	border-radius: 0.5208333333vw;
 	border: none;
 
 	&__content {

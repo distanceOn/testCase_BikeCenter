@@ -32,7 +32,7 @@
 	&__input {
 		background-color: #4f4f4f;
 		width: 35vw;
-		border-radius: 7px;
+		border-radius: 0.3645833333vw;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -107,7 +107,7 @@
 .btn {
 	width: 8.3333333333vw;
 	height: 100%;
-	border-radius: 7px;
+	border-radius: 0.3645833333vw;
 	font-size: 0.7291666667vw;
 	font-weight: 400;
 	line-height: 1.0416666667vw;
@@ -134,7 +134,7 @@
 	&__btn {
 		background-color: $greyDark-color;
 		width: fit-content;
-		border-radius: 7px;
+		border-radius: 0.3645833333vw;
 
 		&_1 {
 			padding: 0.5vw 2.0833333333vw;

@@ -8,6 +8,9 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2.6041666667vw;
+	&_mobile {
+		display: none;
+	}
 }
 
 .content {
@@ -40,5 +43,131 @@
 		font-size: 0.8333333333vw;
 		font-weight: 400;
 		line-height: 1.25vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.info {
+		display: none;
+		&_mobile {
+			display: flex;
+			flex-direction: column;
+			padding-left: 5.6vw;
+			padding-right: 5.0666666667vw;
+			gap: 10.6666666667vw;
+			padding-bottom: 26.6666666667vw;
+		}
+
+		&__1 {
+			display: flex;
+			flex-direction: column;
+			gap: 5vw;
+		}
+
+		&__2 {
+			display: flex;
+			flex-direction: column;
+			gap: 14.9333333333vw;
+		}
+		&__3 {
+			display: flex;
+			flex-direction: column;
+			gap: 6vw;
+		}
+		&__4 {
+			display: flex;
+			flex-direction: column;
+			gap: 5vw;
+		}
+	}
+
+	.info__card {
+		padding-left: 4.2666666667vw;
+		padding-right: 4.2666666667vw;
+		padding-top: 45.6vw;
+		padding-bottom: 6.6666666667vw;
+		background: linear-gradient(179.09deg, #e2e6eb 0.73%, #f3f1f5 69.6%);
+		border-radius: 5.3333333333vw;
+		display: flex;
+		flex-direction: column;
+		gap: 5vw;
+		position: relative;
+
+		&__img {
+			position: absolute;
+			width: 75.2vw;
+			height: 49.3333333333vw;
+			top: -7vw;
+			left: -3vw;
+		}
+		&__ul {
+			width: 70.4vw;
+			display: flex;
+			flex-direction: column;
+			margin-left: 6vw;
+			&__item {
+				font-size: 4.2666666667vw;
+				font-weight: 400;
+				line-height: 6.4vw;
+				color: $greyDark-color;
+			}
+		}
+	}
+
+	.subtitle {
+		font-size: 4.2666666667vw;
+		font-weight: 600;
+		line-height: 5.8666666667vw;
+		width: 78vw;
+	}
+
+	.title {
+		font-size: 6.9333333333vw;
+		font-weight: 700;
+		line-height: 6.4vw;
+	}
+	.text {
+		font-size: 4.2666666667vw;
+		font-weight: 400;
+		line-height: 6.4vw;
+	}
+	.ul {
+		margin-left: 6vw;
+		display: flex;
+		flex-direction: column;
+		gap: 1vw;
+		&__item {
+			font-size: 4.2666666667vw;
+			font-weight: 400;
+			line-height: 6.4vw;
+			color: $greyDark-color;
+			padding-left: 2vw;
+		}
+	}
+	.row {
+		width: 4.2666666667vw;
+		position: absolute;
+		right: 19vw;
+		top: 5.1vw;
+	}
+	.btn {
+		width: 100%;
+		background-color: $black-color;
+		padding-top: 4.5333333333vw;
+		padding-bottom: 4.5333333333vw;
+		padding-left: 18.9333333333vw;
+		padding-right: 29.6vw;
+		color: $white-color;
+		font-family: Open Sans;
+		font-size: 3.7333333333vw;
+		font-weight: 600;
+		line-height: 5.0666666667vw;
+
+		border: none;
+		border-radius: 2.6666666667vw;
+
+		&__content {
+			position: relative;
+		}
 	}
 }

@@ -18,6 +18,7 @@ function Help() {
 				<Header />
 				<HelpHeader />
 				<HelpCards />
+				<HelpInfo />
 			</div>
 		</>
 	);

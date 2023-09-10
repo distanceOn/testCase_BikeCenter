@@ -2,4 +2,69 @@
 	display: flex;
 	flex-direction: column;
 	gap: 0.520833333vw;
+	&__mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		display: none;
+		&__mobile {
+			width: 100%;
+			display: flex;
+			background-color: #000000;
+			padding-top: 4.8vw;
+			padding-left: 4.8vw;
+			padding-right: 9.3333333333vw;
+			padding-bottom: 4.6293333333vw;
+			justify-content: space-between;
+			align-items: center;
+
+			&_left {
+				display: flex;
+				align-items: center;
+				gap: 8.5333333333vw;
+			}
+
+			&_right {
+				display: flex;
+				align-items: center;
+				gap: 8vw;
+			}
+		}
+	}
+
+	.kataBtn {
+		display: none;
+	}
+
+	.lines {
+		display: flex;
+		flex-direction: column;
+		gap: 1.6773333333vw;
+		&__line {
+			width: 8.5333333333vw;
+			height: 0.8373333333vw;
+		}
+
+		&__btn {
+			height: fit-content;
+			width: fit-content;
+		}
+	}
+
+	.logo {
+		width: 32vw;
+		height: 6.5706666667vw;
+	}
+
+	.search {
+		width: 5.8586666667vw;
+		height: 5.8666666667vw;
+	}
+	.cart {
+		width: 5.8666666667vw;
+		height: 5.6vw;
+	}
 }

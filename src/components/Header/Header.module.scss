@@ -10,8 +10,7 @@
 @media screen and (max-width: 768px) {
 	.header {
 		display: none;
-		&__mobile {
-			width: 100%;
+		&_mobile {
 			display: flex;
 			background-color: #000000;
 			padding-top: 4.8vw;

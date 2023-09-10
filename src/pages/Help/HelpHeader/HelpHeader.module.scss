@@ -53,3 +53,48 @@
 	line-height: 1.9791666667vw;
 	letter-spacing: 0.01em;
 }
+
+@media screen and (max-width: 768px) {
+	.header {
+		display: none;
+		&_mobile {
+			display: flex;
+			flex-direction: column;
+			padding-top: 6.9333333333vw;
+			padding-left: 5.3333333333vw;
+			padding-right: 5.3333333333vw;
+			padding-bottom: 4.8vw;
+			gap: 5.9333333333vw;
+		}
+	}
+
+	.link__active {
+		font-size: 6.9333333333vw;
+		font-weight: 600;
+		line-height: 10.1333333333vw;
+		color: $greyDark-color;
+	}
+
+	.phones {
+		color: $greyDark-color;
+		display: flex;
+		flex-direction: column;
+		width: fit-content;
+		align-items: flex-start;
+		height: fit-content;
+		gap: 0.2666666667vw;
+	}
+
+	.phone {
+		font-size: 4.2666666667vw;
+		font-weight: 400;
+		line-height: 6.4vw;
+		letter-spacing: 0.01em;
+	}
+	.number {
+		font-size: 6.4vw;
+		font-weight: 700;
+		line-height: 10.1333333333vw;
+		letter-spacing: 0.01em;
+	}
+}

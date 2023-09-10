@@ -22,6 +22,16 @@ function HelpHeader() {
 					</div>
 				</div>
 			</header>
+
+			<header className={s.header_mobile}>
+				<Link to="/">
+					<String style={s.link__active} value="Помощь"></String>
+				</Link>
+				<div className={s.phones}>
+					<String style={s.phone} value="Телефон горячей линии" />{' '}
+					<String style={s.number} value="8 (800) 500-30-20" />
+				</div>
+			</header>
 		</>
 	);
 }

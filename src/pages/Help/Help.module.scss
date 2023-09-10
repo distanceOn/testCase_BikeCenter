@@ -6,8 +6,9 @@
 @media screen and (max-width: 768px) {
 	.help {
 		display: none;
-		&__mobile {
+		&_mobile {
 			display: flex;
+			flex-direction: column;
 		}
 	}
 }

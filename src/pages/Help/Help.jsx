@@ -14,8 +14,9 @@ function Help() {
 				<HelpInfo />
 				<HelpFooter />
 			</div>
-			<div className={s.help__mobile}>
+			<div className={s.help_mobile}>
 				<Header />
+				<HelpHeader />
 			</div>
 		</>
 	);

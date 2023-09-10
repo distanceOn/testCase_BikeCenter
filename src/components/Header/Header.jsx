@@ -11,8 +11,8 @@ function Header() {
 				<HeaderNav />
 				<HeaderMain />
 			</header>
-			<header className={s.header__mobile}>
-				<div className={s.header__mobile_left}>
+			<header className={s.header_mobile}>
+				<div className={s.header_mobile_left}>
 					<Link to="/menu">
 						<Button
 							style={s.kataBtn}
@@ -29,7 +29,7 @@ function Header() {
 					</Link>
 					<Img style={s.logo} url="Logo_mobile" alt="logo" />
 				</div>
-				<div className={s.header__mobile_right}>
+				<div className={s.header_mobile_right}>
 					<Img style={s.search} url="Search__light" alt="search" />
 					<Img style={s.cart} url="Cart_light" alt="cart" />
 				</div>

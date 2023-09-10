@@ -44,23 +44,55 @@ function Search() {
 
 	const [isValue, setIsValue] = useState('');
 
+	const toBoldItem = (item) => {
+		const collator = new Intl.Collator(undefined, {
+			sensitivity: 'base',
+		});
+
+		const startIndex =
+			collator.compare(item.toLowerCase(), isValue.toLowerCase()) === 0
+				? 0
+				: item.toLowerCase().indexOf(isValue.toLowerCase());
+
+		const endIndex = startIndex + isValue.length;
+		const boldedItem = (
+			<span>
+				{startIndex === -1 ? '' : item.substring(0, startIndex)}
+				{startIndex === -1 ? (
+					<b>{item.substring(startIndex, endIndex + 1)}</b>
+				) : (
+					<b>{item.substring(startIndex, endIndex)}</b>
+				)}
+
+				{startIndex === -1
+					? item.substring(endIndex + 1)
+					: item.substring(endIndex)}
+			</span>
+		);
+		return boldedItem;
+	};
+
 	const searchResults = () => {
 		const stringArray = [];
 		const categoryArray = [];
 		const itemArray = [];
 		for (const item of mokStringData) {
 			if (item.toLowerCase().includes(isValue.toLowerCase())) {
-				stringArray.push(item);
+				stringArray.push(toBoldItem(item));
 			}
 		}
 		for (const item of mokCategoryData) {
 			if (item.toLowerCase().includes(isValue.toLowerCase())) {
-				categoryArray.push(item);
+				categoryArray.push(toBoldItem(item));
 			}
 		}
 		for (const item of mokItemData) {
 			if (item.name.toLowerCase().includes(isValue.toLowerCase())) {
-				itemArray.push(item);
+				const resultItem = {
+					name: toBoldItem(item.name),
+					cost: item.cost,
+				};
+				itemArray.push(resultItem);
 			}
 		}
 

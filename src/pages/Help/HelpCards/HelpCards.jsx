@@ -152,6 +152,72 @@ function HelpCards() {
 					</div>
 				</div>
 			</div>
+			<div className={s.container_mobile}>
+				<div className={s.card__1}>
+					<String style={s.title} value="Мы всегда рады помочь" />
+					<String
+						style={s.text}
+						value="Если у вас есть нерешенный вопрос
+"
+					/>
+					<Button
+						style={s.button__1}
+						type="button"
+						value="Напишите нам в чат"
+					/>
+				</div>
+				<div className={s.card__2}>
+					<String style={s.title} value="Доставка" />
+					<div className={s.card__2__container}>
+						<Img style={s.car} url="Car" alt="car" />
+						<String
+							style={s.text}
+							value="Стоимость доставки будет зависеть от города в котором вы находитесь"
+						/>
+						<Button
+							style={s.button__2}
+							type="button"
+							value="Узнать подробнее"
+						/>
+					</div>
+				</div>
+				<div className={s.card__3}>
+					<div className={s.card__3__container}>
+						<String style={s.title_light} value="Бонусная система" />
+						<ul className={s.ul}>
+							<li className={s.ul__item}>Покупай. </li>
+							<li className={s.ul__item}>Управляй заказами.</li>
+							<li className={s.ul__item}>Накапливай cashback—бонусы</li>
+						</ul>
+					</div>
+				</div>
+
+				<div className={s.card__4}>
+					<String style={s.title} value="Оплата" />
+					<ul className={s.pay}>
+						<li className={s.pay__item}>
+							<String style={s.text} value="Как оплатить заказ" />
+							<Img style={s.arrow} url="Arrow_right" alt="arrow" />
+						</li>
+						<li className={s.pay__item}>
+							<String style={s.text} value="Наложенный платеж" />
+							<Img style={s.arrow} url="Arrow_right" alt="arrow" />
+						</li>
+						<li className={s.pay__item}>
+							<String style={s.text} value="Оплата электронными деньгами" />
+							<Img style={s.arrow} url="Arrow_right" alt="arrow" />
+						</li>
+						<li className={s.pay__item}>
+							<String style={s.text} value="Как оплатить если нет карты" />
+							<Img style={s.arrow} url="Arrow_right" alt="arrow" />
+						</li>
+						<li className={s.pay__item}>
+							<String style={s.text} value="Подарочные карты" />
+							<Img style={s.arrow} url="Arrow_right" alt="arrow" />
+						</li>
+					</ul>
+				</div>
+			</div>
 		</>
 	);
 }

@@ -6,6 +6,9 @@
 	padding-right: 6.8vw;
 	margin-top: 0.78125vw;
 	margin-bottom: 1.25vw;
+	&_mobile {
+		display: none;
+	}
 }
 .nav {
 	display: flex;

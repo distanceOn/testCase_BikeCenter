@@ -17,6 +17,7 @@ function Help() {
 			<div className={s.help_mobile}>
 				<Header />
 				<HelpHeader />
+				<HelpCards />
 			</div>
 		</>
 	);

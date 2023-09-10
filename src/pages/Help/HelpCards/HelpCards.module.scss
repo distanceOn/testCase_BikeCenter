@@ -4,6 +4,10 @@
 	padding-left: 6.5vw;
 	display: flex;
 	gap: 0.8333333333vw;
+
+	&_mobile {
+		display: none;
+	}
 }
 
 .cards {
@@ -197,4 +201,165 @@
 
 .car {
 	width: 17.5520833333vw;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		display: none;
+		&_mobile {
+			display: flex;
+			flex-direction: column;
+			padding-left: 5.3333333333vw;
+			padding-right: 5.3333333333vw;
+		}
+	}
+
+	.card {
+		&__1 {
+			padding: 0;
+		}
+
+		&__2 {
+			padding: 0;
+			padding-top: 6.9333333333vw;
+			display: flex;
+			flex-direction: column;
+			gap: 13.3333333333vw;
+			padding-bottom: 5.3333333333vw;
+
+			&__container {
+				background: linear-gradient(179.09deg, #e2e6eb 0.73%, #f3f1f5 69.6%);
+				border-radius: 5.3333333333vw;
+				padding-top: 33.3333333333vw;
+				padding-left: 8.2666666667vw;
+				padding-right: 10.6666666667vw;
+				padding-bottom: 8vw;
+				position: relative;
+			}
+		}
+
+		&__3 {
+			padding: 0;
+
+			width: 100%;
+			background: linear-gradient(90deg, #ff8c00 0%, #ffbd00 100%);
+			border-radius: 5.3333333333vw;
+
+			margin-bottom: 6.9333333333vw;
+
+			&__container {
+				padding-left: 6.1333333333vw;
+				padding-right: 21.3333333333vw;
+				padding-bottom: 8.2666666667vw;
+				padding-top: 5.6vw;
+				display: flex;
+				flex-direction: column;
+				gap: 2.6666666667vw;
+			}
+		}
+
+		&__4 {
+			padding: 0;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 6.9333333333vw;
+			padding-bottom: 13.0666666667vw;
+		}
+	}
+
+	.ul {
+		margin-left: 3.8vw;
+		&__item {
+			font-size: 3.7333333333vw;
+			font-weight: 600;
+			line-height: 5.0666666667vw;
+			color: $white-color;
+		}
+	}
+
+	.pay {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 3.7333333333vw;
+		width: 100%;
+		&__item {
+			padding-right: 5.6vw;
+			margin-right: -5.6vw;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid #ececec;
+			padding-bottom: 3.7333333333vw;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+
+	.arrow {
+		width: 2.6666666667vw;
+	}
+	.title {
+		font-size: 6.4vw;
+		font-weight: 700;
+		line-height: 6.9333333333vw;
+		letter-spacing: 0.01em;
+		width: 76.5333333333vw;
+
+		&_light {
+			font-size: 5.3333333333vw;
+			font-weight: 700;
+			line-height: 7.2vw;
+			color: $white-color;
+		}
+	}
+
+	.text {
+		font-size: 4.2666666667vw;
+		font-weight: 400;
+		line-height: 6.4vw;
+		letter-spacing: 0.01em;
+	}
+	.button {
+		&__1 {
+			font-size: 3.7333333333vw;
+			font-weight: 600;
+			line-height: 5.0666666667vw;
+			padding-top: 4vw;
+			padding-bottom: 4.8vw;
+			padding-right: 25.0666666667vw;
+			padding-left: 25.0666666667vw;
+			border-radius: 2.6666666667vw;
+			border: none;
+			outline: none;
+			background-color: $black-color;
+			color: #fff;
+			margin-top: 4vw;
+		}
+
+		&__2 {
+			font-size: 3.7333333333vw;
+			font-weight: 600;
+			line-height: 5.0666666667vw;
+			padding-top: 4vw;
+			padding-bottom: 4.8vw;
+			padding-left: 18vw;
+			padding-right: 18vw;
+			border-radius: 2.6666666667vw;
+			border: none;
+			outline: none;
+			background-color: $black-color;
+			color: #fff;
+			margin-top: 4.2666666667vw;
+		}
+	}
+
+	.car {
+		width: 69.3333333333vw;
+		height: 38.1333333333vw;
+		position: absolute;
+		top: -7vw;
+	}
 }

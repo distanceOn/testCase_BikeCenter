@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import s from './Header.module.scss';
 import HeaderMain from './HeaderMain/HeaderMain';
 import HeaderNav from './HeaderNav/HeaderNav';
 import Button from '../../UI/Button';
 import Img from '../../UI/Img';
 function Header() {
+	const { pathname } = useLocation();
+
 	return (
 		<>
 			<header className={s.header}>
@@ -13,16 +15,20 @@ function Header() {
 			</header>
 			<header className={s.header_mobile}>
 				<div className={s.header_mobile_left}>
-					<Link to="/menu">
+					<Link to={pathname === '/menu' ? '/' : '/menu'}>
 						<Button
 							style={s.kataBtn}
 							type="button"
 							content={
-								<div className={s.lines}>
-									<Img style={s.lines__line} url="Line" alt="line" />
-									<Img style={s.lines__line} url="Line" alt="line" />
-									<Img style={s.lines__line} url="Line" alt="line" />
-								</div>
+								pathname === '/menu' ? (
+									<Img style={s.lines__exit} url="Exit_header" alt="exit" />
+								) : (
+									<div className={s.lines}>
+										<Img style={s.lines__line} url="Line" alt="line" />
+										<Img style={s.lines__line} url="Line" alt="line" />
+										<Img style={s.lines__line} url="Line" alt="line" />
+									</div>
+								)
 							}
 							contentStyle={s.lines__btn}
 						/>

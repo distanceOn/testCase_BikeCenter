@@ -51,6 +51,12 @@
 			height: fit-content;
 			width: fit-content;
 		}
+
+		&__exit {
+			width: 5.6vw;
+			height: 5.6vw;
+			display: flex;
+		}
 	}
 
 	.logo {

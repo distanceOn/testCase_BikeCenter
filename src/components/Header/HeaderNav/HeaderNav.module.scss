@@ -77,8 +77,8 @@
 	cursor: pointer;
 
 	&:hover {
-		background-color: #f2f3f5;
-		color: #000;
+		background-color: $whitePrimary-color;
+		color: $blackPrimary-color;
 	}
 	&:active {
 		background-color: $greyDark-color;

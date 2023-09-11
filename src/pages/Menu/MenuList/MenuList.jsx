@@ -112,8 +112,8 @@ function MenuList() {
 		);
 	};
 
-	const showImg = () => {
-		return <div className={s.img}></div>;
+	const showImg = (item) => {
+		return <div key={item} className={s.img}></div>;
 	};
 
 	return (
@@ -135,8 +135,8 @@ function MenuList() {
 					{showList(8)}
 				</div>
 				<div className={s.list__imgs}>
-					{[1, 2, 3, 4, 5].map(() => {
-						return showImg();
+					{[1, 2, 3, 4, 5].map((item) => {
+						return showImg(item);
 					})}
 				</div>
 			</div>

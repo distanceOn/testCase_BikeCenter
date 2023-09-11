@@ -12,15 +12,15 @@
 		display: none;
 	}
 	&::-webkit-scrollbar {
-		width: 2px; /* Ширина скроллбара */
+		width: 2px;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: #999999; /* Цвет ползунка */
+		background-color: $greySecondary-color;
 	}
 
 	&::-webkit-scrollbar-track {
-		background-color: #e0e0e0; /* Цвет трека (фона) скроллбара */
+		background-color: $grey-color;
 	}
 }
 
@@ -35,7 +35,7 @@
 
 	cursor: pointer;
 	&:hover {
-		background-color: #f2f3f5;
+		background-color: $whitePrimary-color;
 	}
 }
 
@@ -44,7 +44,7 @@
 	&__container {
 		width: 2.0833333333vw;
 		height: 2.0833333333vw;
-		background-color: #f2f3f5;
+		background-color: $whitePrimary-color;
 		border-radius: 0.3645833333vw;
 		display: flex;
 		justify-content: center;
@@ -62,7 +62,7 @@
 		font-size: 0.6vw;
 		font-weight: 600;
 		line-height: 1.0416666667vw;
-		color: #000;
+		color: $blackPrimary-color;
 	}
 }
 
@@ -83,7 +83,7 @@
 	}
 
 	.checkout {
-		background-color: #f2f3f5;
+		background-color: $whitePrimary-color;
 		padding: 1.0666666667vw;
 		display: flex;
 		border-radius: 5.3333333333vw;
@@ -104,7 +104,7 @@
 			font-weight: 400;
 			line-height: 5.0666666667vw;
 			padding: 1.8666666667vw 14.1333333333vw;
-			background-color: #fff;
+			background-color: $white-color;
 			box-shadow: 0px 2px 2px 0px #0000001a;
 			color: $greyDark-color;
 			border: none;
@@ -135,7 +135,7 @@
 				justify-content: center;
 				width: 13.8666666667vw;
 				height: 13.3333333333vw;
-				background-color: #f2f3f5;
+				background-color: $whitePrimary-color;
 				border-radius: 2.6666666667vw;
 			}
 

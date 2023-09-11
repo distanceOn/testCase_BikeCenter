@@ -1,3 +1,4 @@
+@import '../../variables.scss';
 .header {
 	display: flex;
 	flex-direction: column;
@@ -12,7 +13,7 @@
 		display: none;
 		&_mobile {
 			display: flex;
-			background-color: #000000;
+			background-color: $blackPrimary-color;
 			padding-top: 4.8vw;
 			padding-left: 4.8vw;
 			padding-right: 9.3333333333vw;

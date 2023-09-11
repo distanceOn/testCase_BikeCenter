@@ -190,8 +190,8 @@
 	cursor: pointer;
 	transition: all 0.1s;
 	&:hover {
-		background-color: #bdbdbd;
-		color: #ffffff;
+		background-color: $greyPrimary-color;
+		color: $white-color;
 	}
 	&:active {
 		background-color: $black-color;
@@ -350,7 +350,7 @@
 			border: none;
 			outline: none;
 			background-color: $black-color;
-			color: #fff;
+			color: $white-color;
 			margin-top: 4vw;
 		}
 
@@ -366,7 +366,7 @@
 			border: none;
 			outline: none;
 			background-color: $black-color;
-			color: #fff;
+			color: $white-color;
 			margin-top: 4.2666666667vw;
 		}
 	}

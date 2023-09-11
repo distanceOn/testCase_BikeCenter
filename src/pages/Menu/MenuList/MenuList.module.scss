@@ -32,7 +32,7 @@
 .block {
 	width: 2.7083333333vw;
 	height: 2.0833333333vw;
-	background-color: #f2f3f5;
+	background-color: $whitePrimary-color;
 	border-radius: 0.3645833333vw;
 }
 
@@ -53,6 +53,6 @@
 .img {
 	width: 6.25vw;
 	height: 6.25vw;
-	background-color: #f2f3f5;
+	background-color: $whitePrimary-color;
 	border-radius: 0.5208333333vw;
 }

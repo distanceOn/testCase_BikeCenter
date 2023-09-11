@@ -34,7 +34,7 @@
 	}
 
 	&__input {
-		background-color: #4f4f4f;
+		background-color: $greyFourth-color;
 		width: 35vw;
 		border-radius: 0.3645833333vw;
 		display: flex;
@@ -99,7 +99,7 @@
 		font-weight: 400;
 		line-height: 1.1458333333vw;
 		letter-spacing: 0.02em;
-		color: #f2f2f2;
+		color: $whitePrimary-color;
 	}
 	&_icon {
 		display: flex;
@@ -176,7 +176,7 @@
 	font-size: 0.7291666667vw;
 	font-weight: 400;
 	line-height: 1.0416666667vw;
-	color: #828282;
+	color: $greyThird-color;
 	margin-top: 0.8854166667vw;
 }
 
@@ -212,14 +212,14 @@
 			font-size: 4.2666666667vw;
 			font-weight: 700;
 			line-height: 6.4vw;
-			color: #fff;
+			color: $white-color;
 		}
 		&__container {
 			display: flex;
 			gap: 3.2vw;
 		}
 		&__btn {
-			background-color: #000;
+			background-color: $black-color;
 			width: fit-content;
 			border-radius: 1.8666666667vw;
 
@@ -256,7 +256,7 @@
 			font-weight: 400;
 			line-height: 6.4vw;
 			text-decoration: underline;
-			color: #f2f2f2;
+			color: $whitePrimary-color;
 		}
 
 		&__schedule {
@@ -264,7 +264,7 @@
 			font-weight: 400;
 			line-height: 5.8666666667vw;
 			letter-spacing: 0.02em;
-			color: #fff;
+			color: $white-color;
 			padding-bottom: 6.9333333333vw;
 		}
 
@@ -294,7 +294,7 @@
 			font-weight: 400;
 			line-height: 5.8666666667vw;
 			letter-spacing: 0.02em;
-			color: #f2f2f2;
+			color: $whitePrimary-color;
 		}
 		&__arrow {
 			width: 2.6666666667vw;
@@ -310,8 +310,8 @@
 			padding-bottom: 4.2666666667vw;
 			padding-left: 17.3333333333vw;
 			padding-right: 21.0666666667vw;
-			background-color: #eb5757;
-			color: #f2f2f2;
+			background-color: $redPrimary-color;
+			color: $whitePrimary-color;
 			border-radius: 1.8666666667vw;
 			border: none;
 			outline: none;
@@ -355,7 +355,7 @@
 			height: 4.2666666667vw;
 		}
 		&__text {
-			color: #f2f2f2;
+			color: $whitePrimary-color;
 			font-size: 4.2666666667vw;
 			font-weight: 400;
 			line-height: 5.8666666667vw;
@@ -372,7 +372,7 @@
 			line-height: 5.0666666667vw;
 			padding-bottom: 3.2vw;
 			padding-top: 9.6vw;
-			color: #bdbdbd;
+			color: $greyPrimary-color;
 		}
 
 		&__input {
@@ -394,12 +394,12 @@
 				line-height: 5.0666666667vw;
 
 				&::placeholder {
-					color: #828282;
+					color: $greyThird-color;
 				}
 			}
 			&__container {
 				display: flex;
-				background-color: #828282;
+				background-color: $greyPrimary-color;
 				padding-top: 2.9333333333vw;
 				padding-right: 5.8666666667vw;
 				padding-bottom: 2.6666666667vw;
@@ -426,7 +426,7 @@
 			font-weight: 400;
 			line-height: 4.2666666667vw;
 			width: 53.8666666667vw;
-			color: #f2f2f2;
+			color: $whitePrimary-color;
 		}
 	}
 }

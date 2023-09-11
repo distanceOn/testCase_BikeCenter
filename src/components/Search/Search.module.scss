@@ -42,15 +42,15 @@
 			margin-right: -1.9vw;
 			padding-right: 2vw;
 			&::-webkit-scrollbar {
-				width: 1px; /* Ширина скроллбара */
+				width: 2px;
 			}
 
 			&::-webkit-scrollbar-thumb {
-				background-color: #999999; /* Цвет ползунка */
+				background-color: $greySecondary-color;
 			}
 
 			&::-webkit-scrollbar-track {
-				background-color: #e0e0e0; /* Цвет трека (фона) скроллбара */
+				background-color: $grey-color;
 			}
 		}
 		&_no {
@@ -124,7 +124,7 @@
 	line-height: 0.989583333vw;
 
 	&::placeholder {
-		color: #828282;
+		color: $greyThird-color;
 	}
 }
 
@@ -184,7 +184,7 @@
 	border-radius: 0.5208333333vw;
 
 	&__container {
-		background-color: #f2f3f5;
+		background-color: $whitePrimary-color;
 		margin-left: -1.8229166667vw;
 		margin-right: -2.0833333333vw;
 		display: flex;

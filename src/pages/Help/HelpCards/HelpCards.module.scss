@@ -30,6 +30,11 @@
 .card {
 	position: relative;
 	border-radius: 1.0416666667vw;
+	transition: transform 0.1s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		transform: scale(1.02);
+	}
 	&__1 {
 		width: fit-content;
 		padding-left: 2.5520833333vw;
@@ -182,6 +187,16 @@
 	padding: 0.8333333333vw 1.8229166667vw 0.78125vw 1.7708333333vw;
 	border-radius: 0.5208333333vw;
 	border: none;
+	cursor: pointer;
+	transition: all 0.1s;
+	&:hover {
+		background-color: #bdbdbd;
+		color: #ffffff;
+	}
+	&:active {
+		background-color: $black-color;
+		color: $white-color;
+	}
 
 	&__content {
 		position: relative;

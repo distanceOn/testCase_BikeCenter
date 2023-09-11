@@ -49,7 +49,7 @@ function HeaderNav() {
 						<Link to="#">
 							<String value="Вакансии" />
 						</Link>
-						<Link to="#">
+						<Link to="/">
 							<String value="Помощь" />
 						</Link>
 						<Link to="#">

@@ -66,6 +66,13 @@
 		width: fit-content;
 		border-radius: 0.520833333vw;
 		cursor: pointer;
+		transition: all 0.1s;
+		&:hover {
+			background-color: #bdbdbd;
+		}
+		&:active {
+			background-color: $black-color;
+		}
 	}
 }
 

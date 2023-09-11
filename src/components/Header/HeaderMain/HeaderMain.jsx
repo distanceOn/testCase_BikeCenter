@@ -28,7 +28,9 @@ function HeaderMain() {
 			<div className={s.container}>
 				<div className={s.content}>
 					<div className={s.content__1}>
-						<Img style={s.logo} url="Logo" alt="logo" />
+						<Link to="/">
+							<Img style={s.logo} url="Logo" alt="logo" />
+						</Link>
 						<div className={s.content__search}>
 							<Link to="/menu">
 								<Button

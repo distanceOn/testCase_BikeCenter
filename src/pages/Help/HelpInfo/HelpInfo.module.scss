@@ -23,11 +23,12 @@
 	font-weight: 700;
 	line-height: 1.25vw;
 	margin-bottom: 1.3541666667vw;
-
+	cursor: default;
 	&__small {
 		font-weight: 600;
 		font-size: 1.0416666667vw;
 		line-height: 1.25vw;
+		cursor: default;
 	}
 }
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../../../UI/Button';
 import Img from '../../../UI/Img';
 import String from '../../../UI/String';
@@ -16,7 +17,10 @@ function HelpInfo() {
 						<ul className={s.text__ul}>
 							<li className={s.text__letters}>
 								Перейдите в раздел{' '}
-								<span style={{ textDecoration: 'underline' }}>«Каталог»</span>;
+								<span style={{ textDecoration: 'underline' }}>
+									<Link to="/menu">«Каталог»</Link>
+								</span>
+								;
 							</li>
 							<li className={s.text__letters}>
 								под понравившимся вам товаром нажать на зеленую кнопку «Купить»:
@@ -100,17 +104,38 @@ function HelpInfo() {
 						<ul className={s.text__ul}>
 							<li className={s.text__letters}>
 								в социальной сети &nbsp;
-								<span style={{ textDecoration: 'underline' }}>ВКонтакте</span>;
-							</li>
-							<li className={s.text__letters}>
-								по электронной почте руководителю интернет-магазина &nbsp;
 								<span style={{ textDecoration: 'underline' }}>
-									info@bike-centre.ru
+									<a
+										href="https://vk.com/bikecentre"
+										target="_blank"
+										rel="noreferrer"
+									>
+										ВКонтакте
+									</a>
 								</span>
 								;
 							</li>
 							<li className={s.text__letters}>
-								написав отзыв о работе «Байк Центра».
+								по электронной почте руководителю интернет-магазина &nbsp;
+								<span style={{ textDecoration: 'underline' }}>
+									<a href="mailto:info@bike-centre.ru" rel="noreferrer">
+										info@bike-centre.ru
+									</a>
+								</span>
+								;
+							</li>
+							<li className={s.text__letters}>
+								написав{' '}
+								<span style={{ textDecoration: 'underline' }}>
+									<a
+										href="https://market.yandex.ru/shop--baik-tsentr/134996/reviews"
+										target="_blank"
+										rel="noreferrer"
+									>
+										отзыв
+									</a>
+								</span>
+								&nbsp;о работе «Байк Центра».
 							</li>
 						</ul>
 					</div>
@@ -142,7 +167,13 @@ function HelpInfo() {
 						value="Мы делаем все возможное, чтобы максимально облегчить вам оформление заказа. Для того, чтобы сделать это:"
 					/>
 					<ul className={s.ul}>
-						<li className={s.ul__item}>Перейдите в раздел «Каталог»;</li>
+						<li className={s.ul__item}>
+							Перейдите в раздел{' '}
+							<Link to="/menu" style={{ textDecoration: 'underline' }}>
+								«Каталог»
+							</Link>
+							;
+						</li>
 						<li className={s.ul__item}>
 							под понравившимся вам товаром нажать на зеленую кнопку «Купить»:
 							это отправляет ваш заказ в виртуальную корзину;
@@ -209,13 +240,40 @@ function HelpInfo() {
 						value="Если у вас есть предложения или замечания по работе интернет-магазина «Байк Центр», то вы всегда можете обратиться к нам:"
 					/>
 					<ul className={s.ul}>
-						<li className={s.ul__item}>в социальной сети ВКонтакте;</li>
 						<li className={s.ul__item}>
-							по электронной почте руководителю интернет-магазина
-							info@bike-centre.ru;{' '}
+							в социальной сети{' '}
+							<a
+								style={{ textDecoration: 'underline' }}
+								href="https://vk.com/bikecentre"
+								target="_blank"
+								rel="noreferrer"
+							>
+								ВКонтакте
+							</a>
+							;
 						</li>
 						<li className={s.ul__item}>
-							написав отзыв о работе «Байк Центра».
+							по электронной почте руководителю интернет-магазина &nbsp;
+							<a
+								style={{ textDecoration: 'underline' }}
+								href="mailto:info@bike-centre.ru"
+								rel="noreferrer"
+							>
+								info@bike-centre.ru
+							</a>
+							;{' '}
+						</li>
+						<li className={s.ul__item}>
+							написав &nbsp;
+							<a
+								style={{ textDecoration: 'underline' }}
+								href="https://market.yandex.ru/shop--baik-tsentr/134996/reviews"
+								rel="noreferrer"
+								target="_blank"
+							>
+								отзыв
+							</a>{' '}
+							о работе «Байк Центра».
 						</li>
 					</ul>
 				</div>

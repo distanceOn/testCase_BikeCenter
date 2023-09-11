@@ -2,7 +2,6 @@
 
 .category {
 	width: fit-content;
-	padding-right: 1.7708333333vw;
 	display: flex;
 	flex-direction: column;
 	gap: 0.3645833333vw;
@@ -13,7 +12,7 @@
 		display: none;
 	}
 	&::-webkit-scrollbar {
-		width: 1px; /* Ширина скроллбара */
+		width: 2px; /* Ширина скроллбара */
 	}
 
 	&::-webkit-scrollbar-thumb {
@@ -32,6 +31,12 @@
 	padding-bottom: 0.4166666667vw;
 	padding-left: 0.0520833333vw;
 	border-bottom: 0.0520833333vw solid #f5f5f5;
+	padding-right: 1.7708333333vw;
+
+	cursor: pointer;
+	&:hover {
+		background-color: #f2f3f5;
+	}
 }
 
 .img {

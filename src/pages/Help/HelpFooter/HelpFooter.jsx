@@ -141,6 +141,209 @@ function HelpFooter() {
 					</div>
 				</div>
 			</footer>
+			<footer className={s.footer_mobile}>
+				<div className={s.apps}>
+					<String style={s.apps__title} value="Скачайте наше приложение" />
+					<div className={s.apps__container}>
+						<Button
+							content={
+								<Img style={s.apps__appstore} url="Appstore" alt="appstore" />
+							}
+							contentStyle={s.apps__btn + ' ' + s.apps__btn_1}
+							style={s.apps__btn_reset}
+							type="button"
+						/>
+						<Button
+							content={
+								<Img
+									style={s.apps__googleplay}
+									url="Googleplay"
+									alt="googleplay"
+								/>
+							}
+							contentStyle={s.apps__btn + ' ' + s.apps__btn_2}
+							style={s.apps__btn_reset}
+							type="button"
+						/>
+					</div>
+				</div>
+				<div className={s.contact}>
+					<String
+						style={s.contact__adress}
+						value="г. Краснодар, ул. Дорожная, 1Е (Яблоновский) и еще 3"
+					/>
+					<String
+						style={s.contact__schedule}
+						value="С 9:00 до 20:00 без выходных"
+					/>
+					<div className={s.contact__socials}>
+						<div className={s.contact__item}>
+							<Img style={s.contact__icon} url="WhatsApp" alt="whatsapp" />
+							<String style={s.contact__text} value="Написать в WhatsApp" />
+							<Img
+								style={s.contact__arrow}
+								url="Arrow_right_light"
+								alt="arrow"
+							/>
+						</div>
+						<div className={s.contact__item}>
+							<Img
+								style={s.contact__icon}
+								url="Telegram_small"
+								alt="telegram"
+							/>
+							<String style={s.contact__text} value="Написать в Telegram" />
+							<Img
+								style={s.contact__arrow}
+								url="Arrow_right_light"
+								alt="arrow"
+							/>
+						</div>
+					</div>
+					<Button
+						style={s.contact__btn}
+						type="button"
+						value="Позвонить 8 (800) 500-03-20"
+					/>
+				</div>
+				<div className={s.menu}>
+					<div className={s.menu__container}>
+						<String style={s.menu__title} value="Помощь" />
+						<ul className={s.menu__list}>
+							<li className={s.menu__item}>
+								<Img style={s.menu__icon} url="Rouble" alt="rouble" />
+								<String style={s.menu__text} value="Оплата" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<Img style={s.menu__icon} url="Conditions" alt="conditions" />
+								<String style={s.menu__text} value="Условия доставки" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<Img style={s.menu__icon} url="House" alt="house" />
+								<String style={s.menu__text} value="Контакты" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<Img style={s.menu__icon} url="Star" alt="star" />
+								<String style={s.menu__text} value="Оставить отзыв" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+						</ul>
+					</div>
+					<div className={s.menu__container}>
+						<ul className={s.menu__list}>
+							<li className={s.menu__item}>
+								<String style={s.menu__text} value="Ремонт и обслуживание" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<String style={s.menu__text} value="Прокат оборудования" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<String style={s.menu__text} value="О нас" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<String style={s.menu__text} value="Вакансии" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<String
+									style={s.menu__text}
+									value="Пользовательское соглашение"
+								/>
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<String style={s.menu__text} value="Бонусная программа" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+							<li className={s.menu__item}>
+								<String style={s.menu__text} value="Арендодателям" />
+								<Img
+									style={s.menu__arrow}
+									url="Arrow_right_light"
+									alt="arrow"
+								/>
+							</li>
+						</ul>
+						<String
+							style={s.menu__subtitle}
+							value="Подпишитесь на наши новости"
+						/>
+						<div className={s.menu__input}>
+							<input
+								placeholder="Введите свой e-mail"
+								className={s.menu__input__in}
+								type="mail"
+							/>
+							<Button
+								contentStyle={s.menu__input__container}
+								content={
+									<Img
+										style={s.menu__input__icon}
+										url="Arrow_right_black"
+										alt="arrow"
+									/>
+								}
+								style={s.menu__input__btn}
+								type="button"
+							/>
+						</div>
+					</div>
+				</div>
+				<div className={s.bottom__mobile}>
+					<String style={s.bottom__mobile__text} value="© 2022" />
+					<String
+						style={s.bottom__mobile__text}
+						value='Интернет-магазин "Байк Центр" ®
+bike-сentre.ru'
+					/>
+				</div>
+			</footer>
 		</>
 	);
 }

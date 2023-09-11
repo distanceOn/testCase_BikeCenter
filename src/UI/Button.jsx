@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-const Button = ({ style, value, type, content, contentStyle }) => {
+const Button = ({ style, value, type, content, contentStyle, onClick }) => {
 	return (
-		<div className={contentStyle}>
+		<div onClick={onClick} className={contentStyle}>
 			{content ? content : ''}
 			<button type={type} className={style}>
 				{value}
@@ -17,6 +17,7 @@ Button.propTypes = {
 	type: PropTypes.string,
 	content: PropTypes.object,
 	contentStyle: PropTypes.string,
+	onClick: PropTypes.func,
 };
 
 export default Button;

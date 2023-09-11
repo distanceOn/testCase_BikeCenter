@@ -115,6 +115,7 @@ function MenuList() {
 	const showImg = () => {
 		return <div className={s.img}></div>;
 	};
+
 	return (
 		<>
 			<div className={s.list}>

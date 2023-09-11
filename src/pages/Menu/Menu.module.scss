@@ -1,7 +1,58 @@
+@import '../../variables.scss';
 .menu {
 	padding-top: 1.7708333333vw;
 	padding-left: 6.1979166667vw;
 	padding-right: 6.5625vw;
 	display: flex;
 	gap: 1.875vw;
+	&_mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+		&_mobile {
+			display: flex;
+			flex-direction: column;
+			gap: 7.4666666667vw;
+		}
+	}
+
+	.city {
+		background-color: $greyDark-color;
+		padding-top: 8.2666666667vw;
+		padding-left: 5.8666666667vw;
+		padding-right: 8.8vw;
+		padding-bottom: 5.6vw;
+		display: flex;
+		justify-content: space-between;
+		color: $white-color;
+
+		border-bottom-right-radius: 1.8666666667vw;
+		border-bottom-left-radius: 1.8666666667vw;
+		margin-top: -1px;
+
+		&__your {
+			font-size: 4.2666666667vw;
+			font-weight: 400;
+			line-height: 5.8666666667vw;
+			letter-spacing: 0.02em;
+		}
+		&__icon {
+			width: 4vw;
+		}
+		&__content {
+			display: flex;
+			gap: 3.7333333333vw;
+		}
+		&__town {
+			font-size: 4.2666666667vw;
+			font-weight: 400;
+			line-height: 5.8666666667vw;
+			letter-spacing: 0.02em;
+			text-decoration: underline;
+		}
+	}
 }

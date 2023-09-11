@@ -9,7 +9,9 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	max-height: 80vh;
-
+	&_mobile {
+		display: none;
+	}
 	&::-webkit-scrollbar {
 		width: 1px; /* Ширина скроллбара */
 	}
@@ -62,4 +64,107 @@
 .arrow {
 	margin-left: auto;
 	width: 0.5208333333vw;
+}
+
+@media screen and (max-width: 768px) {
+	.category {
+		display: none;
+		&_mobile {
+			display: flex;
+			padding-left: 5.3333333333vw;
+			padding-right: 5.3333333333vw;
+			flex-direction: column;
+		}
+	}
+
+	.checkout {
+		background-color: #f2f3f5;
+		padding: 1.0666666667vw;
+		display: flex;
+		border-radius: 5.3333333333vw;
+	}
+
+	.btn {
+		font-size: 3.7333333333vw;
+		font-weight: 400;
+		line-height: 5.0666666667vw;
+		padding: 1.8666666667vw 14.1333333333vw;
+		background-color: transparent;
+		color: $greyDark-color;
+		border: none;
+		outline: none;
+
+		&_active {
+			font-size: 3.7333333333vw;
+			font-weight: 400;
+			line-height: 5.0666666667vw;
+			padding: 1.8666666667vw 14.1333333333vw;
+			background-color: #fff;
+			box-shadow: 0px 2px 2px 0px #0000001a;
+			color: $greyDark-color;
+			border: none;
+			outline: none;
+			border-radius: 4vw;
+		}
+	}
+
+	.list {
+		padding-top: 9.0666666667vw;
+		padding-bottom: 11.7333333333vw;
+		display: flex;
+		flex-direction: column;
+		gap: 5.3333333333vw;
+
+		&__item {
+			display: flex;
+			align-items: center;
+			gap: 4.8vw;
+		}
+
+		&__img {
+			height: 80%;
+			width: 80%;
+			&__container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 13.8666666667vw;
+				height: 13.3333333333vw;
+				background-color: #f2f3f5;
+				border-radius: 2.6666666667vw;
+			}
+
+			&__absolute {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			&__text {
+				position: absolute;
+				font-size: 2.1333333333vw;
+				font-weight: 700;
+				line-height: 2.6666666667vw;
+				top: 5.5vw;
+				left: 4.5vw;
+			}
+		}
+		&__title {
+			font-size: 4.2666666667vw;
+			font-weight: 400;
+			line-height: 5.0666666667vw;
+			color: $greyDark-color;
+			&_bold {
+				font-size: 4.2666666667vw;
+				font-weight: 600;
+				line-height: 5.8666666667vw;
+			}
+		}
+		&__arrow {
+			width: 2.6666666667vw;
+			margin-left: auto;
+		}
+	}
 }
